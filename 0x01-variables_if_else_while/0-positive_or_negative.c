@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * In the function main be  generates a random number  a validate
  * if this number is positive, negative o zero
  */
