@@ -18,12 +18,9 @@ int main(void)
 		{
 			for (u = 50; u <= 57; ++u)
 			{
-				if ( d != u)
-				{
-					putchar(c);
-					putchar(d);
-					putchar(u);
-				}
+				putchar(c);
+				putchar(d);
+				putchar(u);
 				if (c != 55 || d != 56 || u != 57)
 				{
 					putchar(44);
