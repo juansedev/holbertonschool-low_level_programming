@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - the function main use printf to print numbers
+ * main - in this code you can view la combination de los first 900 numbers
  *
  * Return: Always 0 (Sucess)
  */
@@ -32,3 +32,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
