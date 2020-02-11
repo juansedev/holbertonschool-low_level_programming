@@ -1,9 +1,11 @@
 #include "holberton.h"
+
 /**
- * main - function main print the word holberton
- *
+ * main - Entry point
+ * Desc: Entry
  * Return: Always 0 (Sucess)
  */
+
 int main(void)
 {
 	int i = 0;
