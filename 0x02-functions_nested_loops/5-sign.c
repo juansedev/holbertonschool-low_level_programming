@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * print_sing - validate if a argument(@n) is negative, postive o zero
- *
- * Return - (1),(-1) or (0) according to the sign of the argument @n
+ * print_sign - validate the sing of a number
+ * Description: validate if a argument(@n) is negative, postive o zero
+ * @n: The number to checked
+ * Return: 1,-1 or 0 according to the sign of the argument @n
  */
 int print_sign(int n)
 {
