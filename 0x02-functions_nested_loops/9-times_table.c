@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * time_table - perform the multiplication of the first 9 digits
+ * times_table - perform the multiplication of the first 9 digits
  * Description: entry
  * Return: Void
  */
