@@ -2,8 +2,9 @@
 /**
  * _isalpha - Validate if a character belongs to the alphabet either
  * uppercase or lowercase
- * Returns - 1 when the input argument is uppercase or lowercase
- *           0 in other case
+ * @c: Is a int to validate withc function _putchar
+ * Return: 1 when the input argument is uppercase or lowercase
+ *           0 in otherwhise.
  */
 int _isalpha(int c)
 {
