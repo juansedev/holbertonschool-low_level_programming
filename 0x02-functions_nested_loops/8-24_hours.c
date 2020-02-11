@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * jack_bauer -  asdsadas
- * Description: asdsad
+ * jack_bauer - Display hour one to on
+ * Description:
  * Return: Void
  */
 
