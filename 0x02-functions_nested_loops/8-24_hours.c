@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * jack_bauer -  asdsadas
  * Description: asdsad
