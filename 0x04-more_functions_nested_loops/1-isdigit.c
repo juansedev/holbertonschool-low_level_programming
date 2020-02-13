@@ -10,7 +10,7 @@ int _isdigit(int c)
 	int digit, i;
 
 	i = 48;
-	while (i <= 90)
+	while (i <= 57)
 	{
 		if (c == i)
 		{
