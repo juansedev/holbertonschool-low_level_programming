@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int i = 0, add = 0;
+	int i = 0;
+	int add = 0;
 
 	for ( ; i < 1024; ++i)
 	{
@@ -18,5 +19,6 @@ int main(void)
 		}
 	}
 	printf("%d \n", add);
+
 	return (0);
 }
