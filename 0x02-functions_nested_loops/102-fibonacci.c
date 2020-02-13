@@ -33,11 +33,11 @@ int main(void)
 	long resultado, num;
 
 	num = 1;
-	while (num < 50)
+	while (num < 49)
 	{
 		resultado = fibonacci(num);
 		printf("%ld", resultado);
-		if (num < 49)
+		if (num < 48)
 		{
 			printf(", ");
 		}
