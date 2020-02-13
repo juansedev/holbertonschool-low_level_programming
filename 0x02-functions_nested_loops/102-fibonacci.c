@@ -35,7 +35,7 @@ int main(void)
 	num = 1;
 	while (num <= 50)
 	{
-		resultado = fibo(num);
+		resultado = fibonacci(num);
 		printf("%ld, ", resultado);
 		num++;
 	}
