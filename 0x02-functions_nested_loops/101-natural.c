@@ -18,7 +18,7 @@ int main(void)
 			add += i;
 		}
 	}
-	printf("%d \n", add);
+	printf("%d\n", add);
 
 	return (0);
 }
