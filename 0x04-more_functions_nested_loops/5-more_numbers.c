@@ -18,7 +18,7 @@ void more_numbers(void)
 			if (tens > 0)
 				_putchar(tens + '0');
 			_putchar(units + '0');
-			if (j == 14)	
+			if (j == 14)
 				_putchar('\n');
 		}
 		i++;
