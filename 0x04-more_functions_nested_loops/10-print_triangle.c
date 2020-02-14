@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_triangule - prints a triangule of n size
+ * print_triangle - prints a triangule of n size
  * @size: define the size of the matrix
  *
  * Return: Void
