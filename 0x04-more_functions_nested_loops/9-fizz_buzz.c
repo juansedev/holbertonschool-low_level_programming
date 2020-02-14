@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints the numbers from 1 to 100, followed by a new line. But fo
  * multiples of three print Fizz instead of the number and for the multiples
@@ -7,7 +6,6 @@
  * print FizzBuzz
  * Return: void
  */
-
 int main(void)
 {
 	int i;
@@ -26,5 +24,6 @@ int main(void)
 					printf("%d", i);
 		printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
