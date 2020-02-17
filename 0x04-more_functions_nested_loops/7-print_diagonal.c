@@ -18,10 +18,13 @@ void print_diagonal(int n)
 			{
 				if (i > j)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					putchar('\\');
 			} 
 				_putchar('\n');
 =======
+=======
+>>>>>>> 392d491848f636c4e835156c05c1cfd685354ece
 					_putchar(32);
 				if (i == j)
 					_putchar('\\');
