@@ -17,17 +17,11 @@ void print_diagonal(int n)
 			for (j = 0; j < n; j++)
 			{
 				if (i > j)
-<<<<<<< HEAD
-					putchar('\\');
-			} 
-				_putchar('\n');
-=======
 					_putchar(32);
 				if (i == j)
 					_putchar('\\');
 			}
 			_putchar('\n');
->>>>>>> 392d491848f636c4e835156c05c1cfd685354ece
 		}
 	}
 	else
