@@ -12,7 +12,6 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-
 	return (i);
 }
 
@@ -23,14 +22,17 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
-	int len = 0, swap = 0, i, fn;
+	int len = 0, swap = 0, i = 0, fn = 0;
 
 	len = _strlen(s);
-	for (i = 0; i < ((len - 1) / 2); i++)
+	if (len > 0)
 	{
-		swap = *(s + i);
-		fn = (len - 1) - i;
-		*(s + i) = *(s + fn);
-		*(s + fn) = swap;
+		for (i = 0; i < ((len) / 2); i++)
+		{
+			swap = *(s + i);
+			fn = (len - 1) - i;
+			*(s + i) = *(s + fn);
+			*(s + fn) = swap;
+		}
 	}
 }
