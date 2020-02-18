@@ -26,7 +26,7 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int len = 0, swap = 0, i, fn;
-	
+
 	len = _strlen(s);
 	for (i = 0; i < ((len - 1) / 2); i++)
 	{
