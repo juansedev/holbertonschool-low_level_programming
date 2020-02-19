@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _strcpy - function that copies the string pointed to
  * @dest: pointer to string entry data
