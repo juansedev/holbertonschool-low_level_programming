@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strncat - concatenates two strings since n.
  * @dest: string to destiny
@@ -16,13 +15,9 @@ char *_strncat(char *dest, char *src, int n)
 		lenghtd++;
 	while (*(src + lenghts) != '\0')
 		lenghts++;
-
-	printf("lon dest: %d\n", lenghtd);
-	printf("lon src: %d\n", lenghts);
 	if ( n > lenghts)
 	{
 		n = lenghts;
-		printf("lon src: %d n:%d\n", lenghts, n);
 		for (i = 0; *(src + i) != '\0'; i++)
 		{
 			*(dest + lenghtd) = *(src + i);
