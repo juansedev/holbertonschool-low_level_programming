@@ -3,7 +3,8 @@
  * _strncat - concatenates two strings since n.
  * @dest: string to destiny
  * @src: string to source
- * @a: value mas to copy
+ * @a: value max to copy
+ * @n: value to n
  * Return: Return a concatenate string
  */
 
@@ -15,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 		lenghtd++;
 	while (*(src + lenghts) != '\0')
 		lenghts++;
-	if ( n > lenghts)
+	if (n > lenghts)
 	{
 		n = lenghts;
 		for (i = 0; *(src + i) != '\0'; i++)
