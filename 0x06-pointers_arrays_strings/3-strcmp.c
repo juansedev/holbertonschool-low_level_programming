@@ -11,7 +11,7 @@ int _strcmp(char *s1, char *s2)
 
 	for ( ; *(s1 + i) != '\n' ; i++)
 	{
-		if (&s1 == &s2)
+		if (&s1 == &s2  || i > 509)
 		{
 			diff = 0;
 			break;
