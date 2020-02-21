@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
  * _strncpy - function that copies a string
- * dest: string  to destiny
- * src: string to source
- * n: numbers to characters to copy
+ * @dest: string  to destiny
+ * @src: string to source
+ * @n: numbers to characters to copy
+ * Return: *char
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
@@ -18,5 +18,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = '\0';
 	}
-	return dest;
+	return (dest);
 }
