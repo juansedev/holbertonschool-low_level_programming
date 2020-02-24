@@ -9,16 +9,25 @@
 
 char *_strchr(char *s, char c)
 {
-	int size_l = 0;
+	int size_l = 0, i = 0;
+	char *p;
 
-	while (s[size_l])
+	while (s[i])
+		i++;
+
+	if (i > 0)
 	{
-		if (c == s[size_l])
+		while (s[size_l])
 		{
-			s = s + size_l;
-			break;
+			if (c == s[size_l])
+			{
+				p = s + size_l;
+				break;
+			} else
+				p = 0;
+				size_l++;
 		}
-		size_l++;
-	}
-	return (s);
+	} else
+		p = 0;
+	return (p);
 }
