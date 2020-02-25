@@ -1,0 +1,44 @@
+STRSPN(3)              Linux Programmer's Manual              STRSPN(3)
+
+
+
+NAME
+       strspn, strcspn - search a string for a set of bytes
+
+SYNOPSIS
+       #include <string.h>
+
+       size_t strspn(const char *s, const char *accept);
+
+       size_t strcspn(const char *s, const char *reject);
+
+DESCRIPTION
+       The  strspn()  function  calculates the length (in bytes) of the
+       initial segment of s which consists entirely of bytes in accept.
+
+       The strcspn() function calculates the length of the initial seg‐
+       ment of s which consists entirely of bytes not in reject.
+
+RETURN VALUE
+       The strspn() function returns the number of bytes in the initial
+       segment of s which consist only of bytes from accept.
+
+       The strcspn() function returns the number of bytes in  the  ini‐
+       tial segment of s which are not in the string reject.
+
+CONFORMING TO
+       SVr4, 4.3BSD, C89, C99.
+
+SEE ALSO
+       index(3),  memchr(3),  rindex(3),  strchr(3),  string(3),  strp‐
+       brk(3), strsep(3), strstr(3), strtok(3), wcscspn(3), wcsspn(3)
+
+COLOPHON
+       This page is  part  of  release  3.54  of  the  Linux  man-pages
+       project.   A  description  of the project, and information about
+       reporting       bugs,       can        be        found        at
+       http://www.kernel.org/doc/man-pages/.
+
+
+
+                               2012-05-10                     STRSPN(3)
