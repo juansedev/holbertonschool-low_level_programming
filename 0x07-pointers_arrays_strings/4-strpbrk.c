@@ -22,7 +22,8 @@ char *_strpbrk(char *s, char *accept)
 				tmp = s + i;
 				stop = 1;
 				break;
-			}
+			} else
+				tmp = 0;
 		}
 		if (stop == 1)
 			break;
