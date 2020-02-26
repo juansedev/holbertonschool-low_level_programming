@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	_puts_recursion("");
+	_puts_recursion("aasdasdasdasdasd");
 	return (0);
 }

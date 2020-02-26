@@ -8,14 +8,11 @@
 
 void _puts_recursion(char *s)
 {
-	char *tmp;
-
-	tmp = s;
-	if (*tmp == '\0')
+	if (s[0] == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
-	_putchar(*tmp);
-	_puts_recursion(tmp + 1);
+	_putchar(s[0]);
+	_puts_recursion(&s[1]);
 }
