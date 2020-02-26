@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _strlen_recursion - function that print lenght a string
  * @s: string to print recursively
