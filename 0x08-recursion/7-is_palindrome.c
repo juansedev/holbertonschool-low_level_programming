@@ -20,15 +20,13 @@ int _strlen_recursion(char *s)
  * _palindrome - function that returns 1 if a string
  * is a palindrome and 0 if not.
  * @s: string to validate
- * @start: begin the string
- * @size: finish the string
  * Return: 1 if string is palindrome , 0 otherwise
  */
 int _palindrome(int start, int size, char *s)
 {
 	if (s[start] == s[size]  && start < size)
 		return (1 * _palindrome(start + 1, size - 1, s));
-	if (start <= size)
+	if (start >= size)
 		return (1);
 	else
 		return (0);
