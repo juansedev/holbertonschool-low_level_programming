@@ -1,0 +1,63 @@
+
+0-isupper.o:
+0000000000000000 T _isupper
+
+0-memset.o:
+0000000000000000 T _memset
+
+0-strcat.o:
+0000000000000000 T _strcat
+
+100-atoi.o:
+
+1-isdigit.o:
+0000000000000000 T _isdigit
+
+1-memcpy.o:
+0000000000000000 T _memcpy
+
+1-strncat.o:
+0000000000000000 T _strncat
+
+2-strchr.o:
+0000000000000000 T _strchr
+
+2-strlen.o:
+0000000000000000 T _strlen
+
+2-strncpy.o:
+0000000000000000 T _strncpy
+
+3-islower.o:
+0000000000000000 T _islower
+
+3-puts.o:
+                 U _putchar
+000000000000002e T _puts
+0000000000000000 T _strlen
+
+3-strcmp.o:
+0000000000000000 T _strcmp
+
+3-strspn.o:
+0000000000000000 T _strspn
+
+4-isalpha.o:
+0000000000000000 T _isalpha
+
+4-strpbrk.o:
+0000000000000000 T _strpbrk
+
+5-strstr.o:
+                 U printf
+0000000000000000 T _strstr
+
+6-abs.o:
+0000000000000000 T _abs
+
+9-strcpy.o:
+0000000000000000 T _strcpy
+
+_putchar.o:
+0000000000000000 T _putchar
+                 U write

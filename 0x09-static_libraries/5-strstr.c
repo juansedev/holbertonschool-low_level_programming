@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strstr - function 
  * @s: first string
@@ -25,7 +24,6 @@ char *_strstr(char *haystack, char *needle)
 
 	while (needle[len])
 		len++;
-	printf("lenght of needle %d \n \n", len);
 	for (i = 0; *(src + i); i++)
 	{
 		stop1 = 0;
@@ -45,7 +43,6 @@ char *_strstr(char *haystack, char *needle)
 					finish = 1;
 					tmp = src + j;
 				}
-			printf("i: %d , j: %d, mtp: %d, stop: %d, finish: %d \n", i, j, mtp ,stop1, finish);
 		}
 		if(stop1 == 0)
 			break;
