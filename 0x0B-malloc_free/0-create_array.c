@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * create_array: function that creates an array of chars, and initializes
+ * create_array - function that creates an array of chars, and initializes
  * it with a specific char
  * @size: value of lenght to set on memory
  * @c: char to store on memory
