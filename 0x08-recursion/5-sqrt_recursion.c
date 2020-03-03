@@ -30,6 +30,6 @@ int calculate_sqrt(int  n, int i)
 		return (i);
 	if (n / i < i)
 		return (-1);
-		i = calculate_sqrt(n, i + 1);
-		return (i);
+	i = calculate_sqrt(n, i + 1);
+	return (i);
 }

@@ -27,8 +27,8 @@ int _strlen_recursion(char *s)
 int _palindrome(int start, int size, char *s)
 {
 	if (s[start] == s[size]  && start < size)
-		return (1 * _palindrome(start + 1, size - 1, s));
-	if (start >= size)
+		return ( _palindrome(start + 1, size - 1, s));
+	if (start <= size)
 		return (1);
 	else
 		return (0);
