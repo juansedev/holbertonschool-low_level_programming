@@ -50,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *n_dog;
 
-	n_dog =  malloc(sizeof(struct dog));
+	n_dog =  malloc(sizeof(dog_t));
 	if (n_dog)
 	{
 		n_dog->name = malloc((_strlen(name) + 1) * sizeof(char));
