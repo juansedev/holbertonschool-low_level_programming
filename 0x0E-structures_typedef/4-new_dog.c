@@ -29,21 +29,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 	struct dog *n_dog;
 	char *cp_name;
 	char *cp_owner;
-
-	cp_name = malloc(sizeof(char) * _strlen(name) + 1);
-	if (cp_name == NULL)
+	
+	if (name == NULL)
 	{
 		free(name);
 		return (NULL);
 	}
 	cp_name = name;
-	cp_owner = malloc(sizeof(char) * _strlen(owner) + 1);
-	if (cp_owner == NULL)
-	{	free(owner);
+
+	if (owner == NULL)
+	{
+		free(owner);
 		return (NULL);
 	}
 	cp_owner = owner;
-
 
 	n_dog =  malloc(sizeof(struct dog));
 	if (n_dog == NULL)
