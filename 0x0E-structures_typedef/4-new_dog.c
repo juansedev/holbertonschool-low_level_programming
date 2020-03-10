@@ -7,7 +7,7 @@
  * Return: return value of dest
  */
 
-void _strcpy(char *dest, char *src)
+void *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
@@ -20,6 +20,7 @@ void _strcpy(char *dest, char *src)
 	}
 
 	*(dest + i) = '\0';
+	return (dest);
 }
 /**
  * _strlen - returns the length of a string.
@@ -48,28 +49,26 @@ unsigned int _strlen(char *s)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *n_dog;
-	char *cp_name;
-	char *cp_owner;
-
-	cp_name = malloc((_strlen(name) + 1) * sizeof(char));
-	if (cp_name == NULL)
-		return (NULL);
-
-	cp_owner = malloc((_strlen(owner) + 1) * sizeof(char));
-	if (cp_name == NULL)
-		return (NULL);
-	
-	_strcpy(cp_name, name);
-	_strcpy(cp_owner, owner);
 
 	n_dog =  malloc(sizeof(struct dog));
-	if (n_dog == NULL)
-		return (NULL);
-
-
-	n_dog->name = name;
-	n_dog->age = age;
-	n_dog->owner = owner;
-
-	return (n_dog);
+	if (n_dog != NULL)
+	{
+		n_dog->name = malloc((_strlen(name) + 1) * sizeof(char));
+		if (n_dog->name != NULL)
+		{
+			n_dog->name = _strcpy(n_dog->name, name);
+			n_dog->owner = malloc((_strlen(owner) + 1) * sizeof(char));
+			if (n_dog->owner != NULL)
+			{
+				n_dog->owner = _strcpy(n_dog->owner, owner);
+				n_dog->age = age;
+				return (n_dog);
+			}
+			else
+				free(n_dog);
+		}
+		else
+			free(n_dog);
+	}
+	return (NULL);
 }
