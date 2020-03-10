@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * print_dog - function that initialize a variable of type struct dog
+ * free_dog - function that frees dogs.
  * @d: point to struct dog
  *
  * Return: Void
