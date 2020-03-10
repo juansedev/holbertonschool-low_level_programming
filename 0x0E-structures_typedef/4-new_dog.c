@@ -48,16 +48,16 @@ unsigned int _strlen(char *s)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *n_dog;
+	dog_t *n_dog;
 
 	n_dog =  malloc(sizeof(struct dog));
-	if (n_dog != NULL)
+	if (n_dog)
 	{
 		n_dog->name = malloc((_strlen(name) + 1) * sizeof(char));
-		if (n_dog->name != NULL)
+		if (n_dog->name)
 		{
 			n_dog->owner = malloc((_strlen(owner) + 1) * sizeof(char));
-			if (n_dog->owner != NULL)
+			if (n_dog->owner)
 			{
 				_strcpy(n_dog->name, name);
 				_strcpy(n_dog->owner, owner);
