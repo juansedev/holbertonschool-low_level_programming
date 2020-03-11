@@ -23,12 +23,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 			i++;
 		}
 		if (found_it == 0 || size <= 0)
-			return (-1);
+			i = -1;
 		if (found_it > 0)
 		{
-			i -= 1;
-			return (i);
+			i = i - 1;
 		}
 	}
-	return (-1);
+	return (i);
 }
