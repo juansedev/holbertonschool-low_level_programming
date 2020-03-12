@@ -1,10 +1,9 @@
 #include "3-calc.h"
 /**
+ * get_op_func - Function that returns pointer to funcion
+ * @s: pointer to char with operator to validate
  *
- *
- *
- *
- *
+ * Return: Addres to a function to do the arithmetic operation
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -17,7 +16,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i;
-	
+
 	i = 0;
 
 	while (i < 5)
