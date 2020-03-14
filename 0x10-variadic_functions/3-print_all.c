@@ -42,6 +42,10 @@ void fn_string(va_list l)
 	char *tmp;
 
 	tmp = va_arg(l, char *);
+	if (tmp == NULL)
+		tmp = "(nil)";
+	else
+		tmp = va_arg(l, char *);
 	printf("%s", tmp);
 }
 /**
@@ -74,10 +78,7 @@ void print_all(const char * const format, ...)
 			if (fms[j].inp_fmt[0] == format[i])
 			{
 				printf("%s", sep);
-				if (format[i] == 's' && va_arg(list, char *) == NULL)
-					printf("(nil)");
-				else 
-					fms[j].f(list);
+				fms[j].f(list);
 				sep = ", ";
 			}
 			j++;
