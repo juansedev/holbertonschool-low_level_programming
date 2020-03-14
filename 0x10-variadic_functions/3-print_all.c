@@ -74,7 +74,10 @@ void print_all(const char * const format, ...)
 			if (fms[j].inp_fmt[0] == format[i])
 			{
 				printf("%s", sep);
-				fms[j].f(list);
+				if (format[i] == 's' && va_arg(list, char *) == NULL)
+					printf("(nil)");
+				else 
+					fms[j].f(list);
 				sep = ", ";
 			}
 			j++;
