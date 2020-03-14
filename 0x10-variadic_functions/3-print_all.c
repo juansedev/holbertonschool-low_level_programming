@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * fn_char - function prints an argument in char format
  * @l: value of va_list to prints
