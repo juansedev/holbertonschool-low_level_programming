@@ -37,10 +37,13 @@ void fn_float(va_list l)
  */
 void fn_string(va_list l)
 {
-	if ((va_arg(l, char *)) != NULL)
-		printf("%s", va_arg(l, char *));
-	else
+	char *tmp;
+
+	tmp = va_arg(l, char *);
+	if (*tmp == NULL)
 		printf("(nil)");
+	else
+		printf("%s", tmp);
 }
 /**
  * print_all - Function that returns pointer to funcion
