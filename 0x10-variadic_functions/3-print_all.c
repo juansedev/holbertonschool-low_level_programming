@@ -44,8 +44,6 @@ void fn_string(va_list l)
 	tmp = va_arg(l, char *);
 	if (tmp == NULL)
 		tmp = "(nil)";
-	else
-		tmp = va_arg(l, char *);
 	printf("%s", tmp);
 }
 /**
