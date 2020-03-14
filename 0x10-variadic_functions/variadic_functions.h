@@ -1,13 +1,14 @@
 #ifndef _VARIADIC_FUNCTIONS_H_
 #define _VARIADIC_FUNCTIONS_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
 /**
- * struct fmt - Struct fmt
+ * struct str_fmt - Struct fmt
  *
- * @op: The format
+ * @inp_fmt: The format
  * @f: The function associated
  */
 typedef struct str_fmt
