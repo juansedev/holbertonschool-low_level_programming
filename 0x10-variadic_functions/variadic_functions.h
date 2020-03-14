@@ -1,7 +1,8 @@
 #ifndef _VARIADIC_FUNCTIONS_H_
 #define _VARIADIC_FUNCTIONS_H_
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * struct fmt - Struct fmt
