@@ -40,7 +40,7 @@ void fn_string(va_list l)
 	char *tmp;
 
 	tmp = va_arg(l, char *);
-	if (*tmp == NULL)
+	if (tmp == NULL)
 		printf("(nil)");
 	else
 		printf("%s", tmp);
