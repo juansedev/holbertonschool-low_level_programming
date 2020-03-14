@@ -37,7 +37,10 @@ void fn_float(va_list l)
  */
 void fn_string(va_list l)
 {
-	printf("%s", va_arg(l, char *));
+	if ((va_arg(l, char *)) != NULL)
+		printf("%s", va_arg(l, char *));
+	else
+		printf("(nil)");
 }
 /**
  * print_all - Function that returns pointer to funcion
@@ -71,7 +74,6 @@ void print_all(const char * const format, ...)
 				printf("%s", sep);
 				fms[j].f(list);
 				sep = ", ";
-				break;
 			}
 			j++;
 		}
