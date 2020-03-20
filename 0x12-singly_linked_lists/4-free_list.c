@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * list_len - function that returns the number of elements in a linked list.
- * @h: Pointed to head of a list
+ * free_list - function that frees a list_t list.
+ * @head: Pointed to head of a list
  *
- * Return: The number of nodes
+ * Return: Void
  */
 void free_list(list_t *head)
 {
