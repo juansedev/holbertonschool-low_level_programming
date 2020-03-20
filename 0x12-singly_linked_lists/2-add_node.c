@@ -37,5 +37,10 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
+<<<<<<< HEAD
+=======
+	*head = new_node;
+
+>>>>>>> 5b4c152f5560220987c8274e9905636b6d56baaa
 	return (new_node);
 }
