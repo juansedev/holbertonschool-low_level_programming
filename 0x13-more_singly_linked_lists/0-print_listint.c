@@ -5,13 +5,14 @@
  *
  * Return: The number of nodes
  */
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
     size_t nodes = 1;
 
     if(h == NULL)
         return (0);
     
-    nodes += listint_len(h->next);
+    printf("%d\n",h->n);
+    nodes += print_listint(h->next);
     return (nodes);
 }
