@@ -11,7 +11,7 @@ int pop_listint(listint_t **head)
 	int n_field = 0;
 	listint_t *new_head;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		return (0);
 	}
@@ -20,7 +20,6 @@ int pop_listint(listint_t **head)
 	{
 		n_field = (*head)->n;
 		free(*head);
-		*head = NULL;
 	} else
 	{
 		n_field = (*head)->n;
