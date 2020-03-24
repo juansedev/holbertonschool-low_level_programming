@@ -12,21 +12,12 @@ int pop_listint(listint_t **head)
 	listint_t *new_head;
 
 	if (*head == NULL)
-	{
 		return (0);
-	}
 
-	if ((*head)->next == NULL)
-	{
-		n_field = (*head)->n;
-		free(*head);
-	} else
-	{
-		n_field = (*head)->n;
-		new_head = (*head)->next;
-		free(*head);
-		*head = new_head;
-	}
+	n_field = (*head)->n;
+	new_head = (*head)->next;
+	free(*head);
+	*head = new_head;
 
 	return (n_field);
 }
