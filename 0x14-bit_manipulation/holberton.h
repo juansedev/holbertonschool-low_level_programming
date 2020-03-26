@@ -3,7 +3,7 @@
 
 
 unsigned int binary_to_uint(const char *b);
-unsigned int _pow(int base, unsigned int power);
+/*unsigned int _pow(int base, unsigned int power);*/
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
