@@ -20,30 +20,28 @@ unsigned int _pow(int base, unsigned int power)
  */
 unsigned int binary_to_uint(const char *b)
 {
-    unsigned int lenght = 0, decimal = 0, stop = 0;
+    unsigned int lenght = 0, decimal = 0;
     int i;
 
-    while (b[lenght] && stop == 0)
+    while (b[lenght])
     {
         if (b[lenght] != '1' && b[lenght] != '0')
         {
-            stop = 1;
+            return (0);
         }
         lenght++;
     }
 
-    if (stop == 1)
-        return (0);
-
-    i = lenght;
+    i = lenght - 1;
     lenght = 0;
     for ( ;i >= 0; --i)
     {
         if (b[i] == '1')
         {
             decimal = decimal + _pow(2,lenght);
+
         }
         lenght++;
     }
-    return (decimal/2);
+    return (decimal);
 }
