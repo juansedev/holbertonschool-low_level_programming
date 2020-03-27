@@ -18,5 +18,4 @@ int set_bit(unsigned long int *n, unsigned int index)
 	index_slide = 1 << index;
 	*n = *n | index_slide;
 	return (1);
-
 }
