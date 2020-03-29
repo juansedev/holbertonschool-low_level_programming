@@ -1,18 +1,19 @@
 #include "lists.h"
+
 /**
- * print_listint - function that prints a listint_t linked list.
- * @h: Is a first structure of a linked list
+ * print_listint_safe - prints a list without going through an infinite loop
+ * @head: beginning of linked list
  *
- * Return: The number of nodes
+ * Return: size of list
  */
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes = 1;
 
 	if (head == NULL)
-		exit(98);
-
-	printf("[%p] %d\n", (void *)&head, head->n);
-	nodes += print_listint_safe(head->next);
+		return (0);
+	/* act = head->next;
+	printf("[%p] %d\n", (void *)&act, head->n);
+	nodes += print_listint_safe(head->next);*/
 	return (nodes);
 }
