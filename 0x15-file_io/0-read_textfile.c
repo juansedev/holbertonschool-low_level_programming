@@ -3,7 +3,7 @@
  * read_textfile - that reads a text file and prints it to
  * the POSIX standard output.
  * @filename: Pointer to char, in this variable is stored the name of
- * the file to read and print.
+ * the file    to read and print.
  * @letters: letters is the number of letters it should read and print.
  *
  * Return: returns the actual number of letters it could read and print.
