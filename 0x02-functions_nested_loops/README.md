@@ -54,7 +54,7 @@ At the end of this project, you are expected to be able [to explain to a*nyone](
 ## :memo: Files 
 #|File
 ---|---
-o|[main_files](./main_files) 
+DIR|[main_files](./main_files) 
 1|[README.md](./README.md) 
 2|[0-holberton.c](./0-holberton.c)
 3|[1-alphabet.c](./1-alphabet.c)
