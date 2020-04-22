@@ -113,6 +113,6 @@ At the end of this project, you are expected to be able [to explain to anyone](h
      style="float: left; margin-right: 10px;">
 
 **Holberton School - Colombia**
-**Foundations - System engineering & DevOps - Bash**
+**Low-level programming & Algorithm ― Hatching out**
 
 **March, 2020.**
