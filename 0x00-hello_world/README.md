@@ -27,7 +27,7 @@
 
 ---
 <p align="center">
-    <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-holbertonschool-low_level_programming/212/cisfun.jpg" width="360"/>
+    <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg" width="360"/>
 </p>
 
 ## :earth_americas: Resources  
@@ -80,25 +80,13 @@ At the end of this project, you are expected to be able [to explain to anyone](h
 1|[README.md](./README.md) 
 2|[0-preprocessor](./0-preprocessor)
 3|[1-compiler](./1-compiler)
-4|[2-bring_me_home](./2-bring_me_home)
-5|[3-listfiles](./3-listfiles)
-6|[4-listmorefiles](./4-listmorefiles)
-7|[5-listfilesdigitonly](./5-listfilesdigitonly)
-8|[6-firstdirectory](./6-firstdirectory)
-9|[7-movethatfile](./7-movethatfile)
-10|[8-firstdelete](./8-firstdelete)
-11|[9-firstdirdeletion](./9-firstdirdeletion)
-12|[10-back](./10-back)
-13|[11-lists](./11-lists)
-14|[12-file_type](./12-file_type)
-15|[13-symbolic_link](./13-symbolic_link)
-16|[14-copy_html](./14-copy_html)
-17|[15-lets_move](./15-lets_move)
-18|[16-clean_emacs](./16-clean_emacs)
-19|[17-tree](./17-tree)
-20|[18-commas](./18-commas)
-21|[holberton](./holberton)
-22|[holberton.mgc](./holberton.mgc)
+4|[2-assembler](./2-assembler)
+5|[3-name](./3-name)
+6|[4-puts.c](./4-puts.c)
+7|[5-printf.c](./5-printf.c)
+8|[6-size.c](./6-size.c)
+9|[100-intel](./100-intel)
+10|[101-quote.c](./101-quote.c)
 
 ---
 
