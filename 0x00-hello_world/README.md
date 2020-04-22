@@ -27,7 +27,7 @@
 
 ---
 <p align="center">
-    <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg" width="360"/>
+    <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg" width="500"/>
 </p>
 
 ## :earth_americas: Resources  
@@ -113,4 +113,4 @@ At the end of this project, you are expected to be able [to explain to anyone](h
 **Holberton School - Colombia**
 **Foundations - System engineering & DevOps - Bash**
 
-**Febrary, 2020.**
+**March, 2020.**
