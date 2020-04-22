@@ -22,9 +22,10 @@
 </p>
 
 <h1 align="center">Low-level programming & Algorithm </h1>
----
 
 <h2 align="center">Hatching out </h2>
+
+---
 
 ### :file_folder: Files / Directories 
 
