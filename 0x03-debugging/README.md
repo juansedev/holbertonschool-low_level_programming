@@ -50,10 +50,11 @@ At the end of this project, you are expected to be able [to explain to a*nyone](
 Task|File
 ---|---
 -|[README.md](./README.md) 
-0|[0-main.c](./0-main.c) , [positive_or_negative.c](./positive_or_negative.c) , [holberton.h](./holberton.h)
+-|[holberton.h](./holberton.h)
+0|[0-main.c](./0-main.c) , [positive_or_negative.c](./positive_or_negative.c)
 1|[1-main.c](./1-main.c)
-2|[2-largest_number.c](./2-largest_number.c) , [holberton.h](./holberton.h)
-3|[3-print_remaining_days.c](./3-print_remaining_days.c) , [3-convert_day.c](./3-convert_day.c) , [3-main_a.c](./3-main_a.c) , [3-main_b.c](./3-main_b.c), [holberton.h](./holberton.h)
+2|[2-largest_number.c](./2-largest_number.c)
+3|[3-print_remaining_days.c](./3-print_remaining_days.c) , [3-convert_day.c](./3-convert_day.c) , [3-main_a.c](./3-main_a.c) , [3-main_b.c](./3-main_b.c)
 
 ---
 
