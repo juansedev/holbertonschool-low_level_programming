@@ -26,8 +26,6 @@
 
 <h2 align="center">Hatching out </h2>
 
----
-
 ### :file_folder: Files / Directories 
 
 #|File|Description
@@ -78,7 +76,7 @@
 ---|---|---
 1|[README.md](./README.md)|...
 2|[0x15. C - File I/O ](./0x15-file_io)|...
-2|[0x16. C - Simple Shell ](./https://github.com/nathsotomayor/simple_shell)|...
+2|[0x16. C - Simple Shell ](https://github.com/nathsotomayor/simple_shell)|...
 
 
 ---
