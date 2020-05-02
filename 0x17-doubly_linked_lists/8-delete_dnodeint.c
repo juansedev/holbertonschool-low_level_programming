@@ -23,10 +23,16 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	while (copy)
 	{
-		if (ind_node == index)
+		if (ind_node == index && copy->next != NULL)
 		{
 			(copy->prev)->next = (copy->next);
 			(copy->next)->prev = (copy->prev);
+			free(copy);
+			return (1);
+		}
+		if (ind_node == index && copy->next == NULL)
+		{
+			(copy->prev)->next = NULL;
 			free(copy);
 			return (1);
 		}
