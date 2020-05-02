@@ -12,11 +12,25 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *copy = head;
 	unsigned int ind_node = 0;
 
-	while (ind_node != index)
+	if (head != NULL)
 	{
-		copy = copy->next;
-		ind_node++;
-	}
-
-	return (copy);
+		while (head)
+		{
+			head = head->next;
+			ind_node++;
+		}
+		printf("node %d \n", ind_node);
+	} else
+		return (NULL);
+	if (index < ind_node)
+	{
+		ind_node = 0;
+		while (ind_node != index)
+		{
+			copy = copy->next;
+			ind_node++;
+		}
+		return (copy);
+	} else
+		return (NULL);
 }
