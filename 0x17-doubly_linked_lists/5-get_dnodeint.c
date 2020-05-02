@@ -19,7 +19,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			head = head->next;
 			ind_node++;
 		}
-		printf("node %d \n", ind_node);
 	} else
 		return (NULL);
 	if (index < ind_node)
