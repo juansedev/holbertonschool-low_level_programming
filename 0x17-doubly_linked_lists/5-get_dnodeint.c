@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
- * get_dnodeint_at_index - Function that count all the elements of a dlistint_t list
+ * get_dnodeint_at_index - Function that count all the elements
+ * of a dlistint_t list
  * @head: double  Pointer with the addres of head of a list
  * @index: value of the index
  *
