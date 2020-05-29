@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_create - In this function create a hash table
  * with Chaining collision handling
@@ -19,7 +18,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	new_node = malloc(sizeof(hash_node_t));
 	if (!new_node)
-		return (NULL);
+        {
+                free(new_hash);
+        	return (NULL);
+        }
 
 	new_node->key = NULL;
 	new_node->value = NULL;
