@@ -5,7 +5,7 @@
  * with Chaining collision handling
  * @size: lenght of the hasta table
  *
- * Reurn: A new hash table
+ * Return: A new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
