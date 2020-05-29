@@ -24,6 +24,7 @@ hash_table_t *hash_table_create(unsigned long int size)
         new_node->key = NULL;
         new_node->value = NULL;
         new_node->next = NULL;
+        new_hash->array = &new_node;
 
         return (new_hash);
 }
