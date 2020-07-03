@@ -4,8 +4,8 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 RM = rm -f
 
-all: $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
