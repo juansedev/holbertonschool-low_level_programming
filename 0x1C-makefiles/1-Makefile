@@ -1,5 +1,6 @@
+all: fuction
 CC := gcc
 SRC := main.c holberton.c
 
-all:
+fuction:
 	$(CC) $(SRC) -o holberton
