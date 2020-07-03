@@ -1,6 +1,5 @@
-all: function
-CC:= gcc
-SRC:= $(wildcard ./*.c)
+CC := gcc
+SRC := $(wildcard ./*.c)
 
-function:
+all: $(SRC)
 	$(CC) $(SRC) -o holberton
