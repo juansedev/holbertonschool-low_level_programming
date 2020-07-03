@@ -1,14 +1,3 @@
-# the compiler: gcc for C program, define as g++ for C++
-CC = gcc
-
-# the build target executable
-TARGET = holberton
-
-all: $(TARGET)
-
-$(TARGET): $(TARGET).c
-	$(CC) main.c $(TARGET).c -o $(TARGET)
-
-clean:
-	$(RM) $(TARGET)
+all: holberton.c main.c
+	gcc holberton.c main.c -o holberton
 
