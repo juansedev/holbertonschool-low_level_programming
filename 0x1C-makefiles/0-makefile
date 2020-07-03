@@ -11,3 +11,4 @@ $(TARGET): $(TARGET).c
 
 clean:
 	$(RM) $(TARGET)
+
