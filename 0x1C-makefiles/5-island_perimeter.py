@@ -4,6 +4,7 @@
     array
 """
 
+
 def len_height(grid=[[]]):
     """ """
     if grid != [[]]:
@@ -11,6 +12,7 @@ def len_height(grid=[[]]):
             i
         return i + 1
     return 0
+
 
 def len_width(grid=[[]]):
     """ """
@@ -28,7 +30,7 @@ def island_perimeter(grid):
     w = len_width(grid)
     perimeter = 0
 
-    if  h == 0 or w == 0:
+    if h == 0 or w == 0:
         return perimeter
     for i in range(h):
         for j in range(w):
