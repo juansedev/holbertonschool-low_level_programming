@@ -4,6 +4,7 @@
     array
 """
 
+
 def island_perimeter(grid):
     """ function to calculate the perimeter"""
     h = len(grid)
