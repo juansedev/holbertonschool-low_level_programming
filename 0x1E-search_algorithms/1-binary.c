@@ -13,9 +13,6 @@ int recursive_search(int value, int start, int end, int *array)
 {
 	int middle = 0, i = 0;
 
-	if (start >= end && value != array[start])
-		return (-1);
-
 	middle = ((end - start) / 2) + start;
 
 	printf("Searching in array:");
@@ -27,9 +24,12 @@ int recursive_search(int value, int start, int end, int *array)
 
 	if (value == array[middle])
 		return (middle);
+	
+	if (start >= end && value != array[start])
+		return (-1);
 
-	if (value < array[middle])
-		return (recursive_search(value, start, middle - 1, array));
+	if (value <= array[middle])
+		return (recursive_search(value, start, middle, array));
 	else
 		return (recursive_search(value, middle + 1, end, array));
 }
