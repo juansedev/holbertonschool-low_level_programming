@@ -1,19 +1,56 @@
 #include "search_algos.h"
 /**
- * recursive_search - Search recursive .
- * @value: Is the value to search for
- * @start: Begin the array
- * @end: End the array
- * @array: Pointer to the first element of the array to search in
- *
- * Return: The first index where value is located, If value is not present
- *         in array or if array is NULL, your function must return -1
+ * binary_search - search for a value in a array with o(logn)
+ * @array: array
+ * @size: size of the array
+ * @value: value to search for
+ * Return: index of the value
  */
-int recursive_search(int value, int start, int end, int *array)
+int binary_search(int *array, size_t size, int value)
 {
-	int middle = 0, i = 0;
+	if (!array)
+		return (-1);
+	return (recursive_search(0, size - 1, value, array));
+}
 
-	middle = ((end - start) / 2) + start;
+
+/**
+ * recursive_search - search by half
+ * @start: starting point
+ * @end: end point
+ * @value: searched_value
+ * @array: array array
+ * Return: Nothing
+ */
+int recursive_search(int start, int end, int value, int *array)
+{
+	int middle = start + (end - start) / 2;
+
+	_print(start, end, array);
+	if (start == end && value != array[middle])
+		return (-1);
+	else if (value > array[middle])
+	{
+		middle = recursive_search(middle + 1, end, value, array);
+	}
+	else if (value < array[middle])
+	{
+		middle = recursive_search(start, middle - 1, value, array);
+	}
+	return (middle);
+}
+
+
+/**
+ * _print - prints every try to find the value
+ * @start: starting point
+ * @end: end point
+ * @array: array array
+ * Return: Nothing
+ */
+void _print(int start, int end, int *array)
+{
+	int i = 0;
 
 	printf("Searching in array: ");
 	for (i = start; i <= end; i++)
@@ -23,33 +60,4 @@ int recursive_search(int value, int start, int end, int *array)
 		else
 			printf("%d\n", array[i]);
 	}
-
-	if (start == end && value != array[middle])
-		return (-1);
-	else if (value > array[middle])
-		middle = recursive_search(value, middle + 1, end, array);
-	else if (value < array[middle])
-		middle = recursive_search(value, start, middle - 1, array);
-
-	return (middle);
-}
-
-/**
- * binary_search - searches for a value in a sorted array of integers using
- * the Binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: is the number of elements in array
- * @value: is the value to search for
- *
- * Return: The first index where value is located, If value is not present
- *         in array or if array is NULL, your function must return -1
- */
-int binary_search(int *array, size_t size, int value)
-{
-	int start = 0, end = array[size - 1];
-
-	if (!array)
-		return (-1);
-
-	return (recursive_search(value, start, end, array));
 }
