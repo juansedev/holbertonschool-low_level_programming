@@ -26,10 +26,10 @@ int recursive_search(int value, int start, int end, int *array)
 
 	if (start == end && value != array[middle])
 		return (-1);
-	else if (value < array[middle])
-		middle = (recursive_search(value, start, middle - 1, array));
 	else if (value > array[middle])
-		middle = (recursive_search(value, middle + 1, end, array));
+		middle = recursive_search(value, middle + 1, end, array);
+	else if (value < array[middle])
+		middle = recursive_search(value, start, middle - 1, array);
 
 	return (middle);
 }
