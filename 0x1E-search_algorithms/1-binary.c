@@ -15,12 +15,14 @@ int recursive_search(int value, int start, int end, int *array)
 
 	middle = ((end - start) / 2) + start;
 
-	printf("Searching in array:");
-	for (i = start; i < end; i++)
+	printf("Searching in array: ");
+	for (i = start; i <= end; i++)
 	{
-		printf(" %d,", array[i]);
+		if (i != end)
+			printf("%d, ", array[i]);
+		else
+			printf("%d\n", array[i]);
 	}
-	printf(" %d\n", array[i]);
 
 	if (start == end && value != array[middle])
 		return (-1);
