@@ -24,14 +24,12 @@ int recursive_search(int value, int start, int end, int *array)
 
 	if (start == end && value != array[middle])
 		return (-1);
-
-	if (value < array[middle])
+	else if (value < array[middle])
 		return (recursive_search(value, start, middle - 1, array));
-	else
+	else if (value > array[middle])
 		return (recursive_search(value, middle + 1, end, array));
 
-	if (value == array[middle])
-		return (middle);
+	return (middle);
 }
 
 /**
