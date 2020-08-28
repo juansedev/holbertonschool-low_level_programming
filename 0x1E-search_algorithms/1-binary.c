@@ -22,16 +22,16 @@ int recursive_search(int value, int start, int end, int *array)
 	}
 	printf(" %d\n", array[i]);
 
-	if (value == array[middle])
-		return (middle);
-
-	if (start >= end && value != array[start])
+	if (start == end && value != array[middle])
 		return (-1);
 
-	if (value <= array[middle])
+	if (value < array[middle])
 		return (recursive_search(value, start, middle - 1, array));
 	else
 		return (recursive_search(value, middle + 1, end, array));
+
+	if (value == array[middle])
+		return (middle);
 }
 
 /**
